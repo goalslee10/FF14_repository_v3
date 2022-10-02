@@ -1,16 +1,15 @@
 # FF14_repository_v3
-ff14
+FFXIV 게임 정보 사이트 
 
+파이널판타지14 게임의 각종 정보를 담은 사이트 제작
 
-# <img src="/images_2/PngItem_1173386.png"  width="35px" height="35px" > FFXIV 게임 정보 사이트 
+<br></br>
+
+# <img src="/images_2/PngItem_1173386.png"  width="35px" height="35px" >  
 
 
  <br><img src="/images_2/구브라도서관_logo.png"  width="250px" height="110px">
   
-
-  파이널판타지14 게임의 각종 정보를 담은 사이트 제작
-  
-<br></br>
 
 
 ## :penguin: 팀원 소개 및 한마디
@@ -91,7 +90,7 @@ Library : modal, tailwind, nextjs
 <br></br>
 DB : MySQL
 <br></br>
-Dependencies : Lombok, spring
+Dependencies: Spring Data JPA, Spring Web, MySQL Driver, Lombok. JswWebToken
 <br></br>
 REST API : Postman
 <br></br>
