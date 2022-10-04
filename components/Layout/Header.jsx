@@ -31,7 +31,7 @@ let navigation = [
   },
   {
     name: '힐러',
-    href: '#',
+    href: '/job/heal',
     icon: './images/role/role_healers.svg'
 
   },
@@ -88,7 +88,9 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Popover className="relative bg-white">
+
+    
+    <Popover className="relative bg-deepblue">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
 
@@ -96,7 +98,7 @@ export default function Header() {
             <a href="http://localhost:3000/">
               <img
                 className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="./images/logo_gub.png"
                 alt=""
               />
             </a>
@@ -114,11 +116,11 @@ export default function Header() {
 
           {/*여기가 메뉴바 목록  */}
 
-          <Link href="/info" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            Info
+          <Link href="/info">
+            <div className="text-white font-medium"> Info </div>
           </Link>
-          <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            스타터 가이드
+          <Link href="#" >
+            <div className="text-white font-medium"> 새싹가이드</div>
           </Link>
 
 
@@ -128,15 +130,15 @@ export default function Header() {
                 <>
                   <Popover.Button
                     className={classNames(
-                      open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                      open ? 'text-white' : 'text-white',
+                      'group inline-flex items-center rounded-md  font-medium'
                     )}
                   >
                     <span>잡 가이드</span>
                     <ChevronDownIcon
                       className={classNames(
-                        open ? 'text-gray-600' : 'text-gray-400',
-                        'ml-2 h-5 w-5 group-hover:text-gray-500'
+                        open ? 'text-white' : 'text-white',
+                        'ml-2 h-5 w-5 group-hover:text-wh'
                       )}
                       aria-hidden="true"
                     />
@@ -155,21 +157,18 @@ export default function Header() {
                     leaveTo="opacity-0 translate-y-1"
                   >
 
-                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-10 -ml-3 mt-3 w-48 max-w-md transform px-2 sm:px-0 lg:left-1/2  lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {navigation.map((item) => (
                             <Link key={item.name} href={item.href}>
-                              <a className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
-                                
-
+                              <a className="-m-4 flex items-start rounded-lg p-3 hover:bg-gray-50">
                                 <img
-                                  className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true"
+                                  className="h-7 w-7 flex-shrink-0" aria-hidden="true"
                                   src={item.icon}
                                   alt=""
                                 />
-
-                                <div className="ml-4">
+                                <div className="ml-8">
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                   <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                                 </div>
@@ -190,7 +189,7 @@ export default function Header() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                      'group inline-flex items-center rounded-md text-white font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                     )}
                   >
                     <span>풍맥지도</span>
@@ -257,12 +256,11 @@ export default function Header() {
             </Popover>
           </Popover.Group>
 
-          <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            일일복권
+          <Link href="/info">
+            <div className="text-white font-medium"> 일일복권 </div>
           </Link>
-
-          <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            자유게시판
+          <Link href="/info">
+            <div className="text-white font-medium"> 자유게시판 </div>
           </Link>
           <Login />
 
@@ -348,8 +346,8 @@ export default function Header() {
       {/*여기가 SNS아이콘 입니다. */}
       <div >
         <div className='flex flex-col fixed  inset-y-0 right-0 m-10 mt-36'>
-          <div className=" h-12 w-20 p-4  ">
-            <a href="https://www.facebook.com"><img src="./images/fcb.png " /></a>
+          <div className=" h-12 w-20 p-3.5 mb-1.5 ">
+            <a href="https://www.ff14.co.kr/close/close.html"> <img src="./images/_24_ffxiv-logo-png_final-fantasy-xiv-dalamud-token-icon-by-doctorcool-on-deviantart.png" /></a>
           </div>
 
           <div className="h-12 w-20 p-4 ">
