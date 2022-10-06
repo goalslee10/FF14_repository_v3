@@ -17,7 +17,7 @@ FFXIV 게임 정보 사이트
 
 - :fish:김다현(FE) : " 잘해줄때 잘해라 "
 - :ant:이해민(BE) : " 배가 불러야 열심히 한다 "
-- :cat:이영주(BE) : " 연봉 협상 노려봅니다 "
+- :cat:이영주(BE) : " 아  "
 <br>
 
 ## 2. :sheep: 팀 규칙
@@ -48,6 +48,7 @@ FFXIV 게임 정보 사이트
 </div>
 
 <br></br>
+
 ## 3. :rabbit2:사이트 구조 설계 및 와이어프레임
 
 <img src="/images_2/ff14.jpg" >
@@ -90,10 +91,9 @@ FFXIV 게임 정보 사이트
 ❎Trouble :
  사이트 접속 시 콘솔 창에 뜨는 에러 </br>
  ![image](https://user-images.githubusercontent.com/106312483/194206540-c350f7b1-6574-4d53-839c-3f19c8960f04.png)
+✔️Solution : modal 태그 안 'ariaHideApp={false}' 추가 </br>
 
 
-
-  
   
 
 <br> </br>
@@ -106,9 +106,9 @@ Id : Eclipse, Vscode
 <br></br>
 Library : modal, tailwindcss, nextjs(framework), yup
 <br></br>
-DB : MySQL
+DB : MySQL, H2
 <br></br>
-Dependencies: Spring Data JPA, Spring Web, MySQL Driver, Lombok, JswWebToken
+Dependencies: Spring Data JPA, Spring Web, H2, MySQL Driver, Lombok, JswWebToken
 <br></br>
 REST API : Postman
 <br></br>
@@ -124,6 +124,12 @@ REST API : Postman
   <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> 
  <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+</br>
+
+<br>
+
+## 6. 🚥 느낀점
+
 
  
   <br>
