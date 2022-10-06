@@ -79,6 +79,10 @@ FFXIV 게임 정보 사이트
 
 <br>
 
+
+
+
+
  
  
  
@@ -86,7 +90,7 @@ FFXIV 게임 정보 사이트
 <br></br>
 Id : Eclipse, Vscode
 <br></br>
-Library : modal, tailwind, nextjs
+Library : modal, tailwind, nextjs, yup
 <br></br>
 DB : MySQL
 <br></br>
