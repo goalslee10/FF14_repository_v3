@@ -80,9 +80,28 @@ FFXIV 게임 정보 사이트
 <br>
 
 
+## ❎✔️ Trouble Shooting
+ 
+ ❎Trouble
+ - 1. 모달 
+  - 1. (1) 모달 창 띄우기 <br></br>
+  - 1. (2) 모달 창 제외 다른 부분 불투명하게 보이기 <br></br>
+ ex. ![image](https://user-images.githubusercontent.com/106312483/194207323-4ffef4be-4ed4-4d92-852b-aa04b0e19301.png)
+ - 2. <BE> SpringBoot dispatcherServlet Error <br></br>
+ - 3. 사이트 접속 시 콘솔 창에 뜨는 에러 <br></br>
+ ![image](https://user-images.githubusercontent.com/106312483/194206540-c350f7b1-6574-4d53-839c-3f19c8960f04.png)
 
+ ✔️Solution
+ - 1. 모달 창 띄우기 => npm module - modal Library 이용, 
+  - 1. (1) Before  <br></br>           
+  ![image](https://user-images.githubusercontent.com/106312483/194208387-c2728afc-10c9-4cf0-8c42-e368765064e7.png)
 
+  
+ 
+ 
+ 
 
+<br> </br>
  
  
  
