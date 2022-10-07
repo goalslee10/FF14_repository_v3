@@ -1,0 +1,36 @@
+{
+  "name": "ff14",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.2",
+    "@heroicons/react": "^2.0.11",
+    "document": "^0.4.7",
+    "formik": "^2.2.9",
+    "leaflet": "^1.9.2",
+    "next": "12.3.1",
+    "next-images": "^1.8.4",
+    "react": "^18.2.0",
+    "react-audio-player": "^0.17.0",
+    "react-leaflet": "^4.1.0",
+    "react-modal": "^3.15.1",
+    "react-router-dom": "^6.4.1"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.8.0",
+    "autoprefixer": "^10.4.12",
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1",
+    "postcss": "^8.4.16",
+    "postcss-import": "^15.0.0",
+    "postcss-loader": "^7.0.1",
+    "tailwindcss": "^3.1.8",
+    "tailwindcss-textshadow": "^2.1.3"
+  }
+}
