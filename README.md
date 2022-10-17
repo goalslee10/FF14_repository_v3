@@ -83,7 +83,9 @@
 ## 잡가이드 화면
   ![image](https://user-images.githubusercontent.com/111736134/196095958-52c03125-b50c-4171-bc65-8ed50bc71b69.png)
 
-  
+## 풍맥지도
+![as](https://user-images.githubusercontent.com/111736134/196096694-f51780ac-de46-4e5e-83a6-d780f2f726d5.png)
+
   
 ## 5. ❌❌Trouble Shooting❌❌
  
