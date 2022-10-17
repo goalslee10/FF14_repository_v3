@@ -77,7 +77,10 @@
 ## 결과창
 ![제목 없음](https://user-images.githubusercontent.com/111736134/196095495-84f7606a-6dcf-4d73-aa31-5920488b7940.png)
 
- 
+ ##메인페이지 전체화면
+ ![jk](https://user-images.githubusercontent.com/111736134/196095750-19fd6eac-43ad-4b12-9ffa-b2261bcc0814.png)
+
+  
 ## 5. ❌❌Trouble Shooting❌❌
  
 
