@@ -74,7 +74,9 @@
 
 <br>
 
- 
+## 결과창
+![제목 없음](https://user-images.githubusercontent.com/111736134/196095495-84f7606a-6dcf-4d73-aa31-5920488b7940.png)
+
  
 ## 5. ❌❌Trouble Shooting❌❌
  
