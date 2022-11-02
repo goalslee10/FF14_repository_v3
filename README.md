@@ -134,14 +134,15 @@ REST API(Tool): Postman
 
 <div align=center> 
   <img src="https://img.shields.io/badge/java-007396.svg?style=for-the-badge&logo=java&logoColor=white">
-  
   <img src="https://img.shields.io/badge/visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white">
   <img src="https://img.shields.io/badge/eclipse IDE-2C2255?style=for-the-badge&logo=Eclipse IDE&logoColor=white">
   <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
   <img src="https://img.shields.io/badge/springBoot-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
   <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/h2%20DataBase-00000.svg?style=for-the-badge&logo=h2DataBase&logoColor=white">
   <img src="https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white">
   <img src="https://img.shields.io/badge/nextjs-000000?style=for-the-badge&logo=Next.js&logoColor=white">
+  <img src="https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=Leaflet&logoColor=white">
   <img src="https://img.shields.io/badge/tailwindcss-000000?style=for-the-badge&logo=TailWindCss&logoColor=white">
   <img src="https://img.shields.io/badge/jswtoken-000000?style=for-the-badge&logo=JSONWebTokens&logoColor=white">
   
@@ -151,7 +152,12 @@ REST API(Tool): Postman
 
  
 </br>
-
+<br>
+  
+  
+  
+  
+</br>
 <h1>저희는 아직 끝나지 않았습니다. To be Continue~ </h1>
 
 
