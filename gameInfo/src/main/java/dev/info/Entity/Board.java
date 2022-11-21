@@ -31,7 +31,7 @@ public class Board {
 	@Id
 	@GeneratedValue //(strategy = GenerationType.IDENTITY)
 	@Column
-	private String id;
+	private Integer id;
 
 	@Column(nullable = false)
 	private String title;
@@ -50,7 +50,7 @@ public class Board {
 	@Getter
 	@Setter
 	public static class Request {
-		private String id;
+		private Integer id;
 		private String title;
 		private String content;
 
@@ -66,13 +66,16 @@ public class Board {
 	@Getter
 	@Setter
 	public static class Response {
-		private String id;
+		private Integer id;
 		private String title;
 		private String content;
 
 		public static Board.Response toResponse(final Board board) {
-			return Response.builder().id(board.getId()).title(board.getTitle()).content(board.getContent()).build();
-
+			return Response.builder()
+					.id(board.getId())
+					.title(board.getTitle())
+					.content(board.getContent())
+					.build();
 		}
 
 		public static List<Board.Response> toResponseList(final List<Board> boards) {
