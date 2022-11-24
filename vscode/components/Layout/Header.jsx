@@ -123,7 +123,7 @@ export default function Header() {
           <Link href="pages/info">
             <div className="  cursor-pointer text-white font-GmarketSansMedium  font-medium"> 일일복권 </div>
           </Link>
-          <Link href="/info">
+          <Link href="/board">
             <div className="  cursor-pointer text-white font-GmarketSansMedium  font-medium"> 자유게시판 </div>
           </Link>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">

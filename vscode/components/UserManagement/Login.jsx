@@ -90,8 +90,8 @@ const Login = () => {
           <input id='user-id' type='text' onChange={idInputHandler} className='w-72 p-3 m-3 rounded-2xl bg-darkgray border-4 border-deepdarkblue text-silver' placeholder='ID'></input><br></br>
           <input id='password' type='password' onChange={passwordInputHandler} className='w-72 p-3 m-3 rounded-2xl bg-darkgray border-4 border-deepdarkblue text-silver' placeholder='Password'></input><br></br>
           
-          <button type='submit' onClick={loginButtonHandler}className='bg-violet hover:bg-purple-700 text-white font-bold py-2 px-4 rounded m-5 font-GmarketSansMedium '>로그인</button>
-          <button type='submit' className='bg-deepdarkblue  hover:bg-purple-700 text-white font-bold py-2 px-4 rounded m-5 font-GmarketSansMedium '>회원가입</button>
+          <button type='submit' onClick={loginButtonHandler} className='bg-violet hover:bg-purple-700 text-white font-bold py-2 px-4 rounded m-5 font-GmarketSansMedium '>로그인</button>
+          <button type='submit' className='bg-deepdarkblue hover:bg-purple-700 text-white font-bold py-2 px-4 rounded m-5 font-GmarketSansMedium '>회원가입</button>
         </div>
       </Modal>
     </div>
