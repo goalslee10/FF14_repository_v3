@@ -1,4 +1,5 @@
 import React from 'react'
+import BoardList from './boardList/BoardList'
 
 const Board = () => {
   return (
@@ -18,48 +19,7 @@ const Board = () => {
         </div>
         <div className='m-5 text-left text-white font-GmarketSansMedium'>자유게시판</div>
     </section>
-    <div className='grid place-items-center text-xl text-white font-GmarketSansMedium'>
-        <table class="table-auto" className='m-5 text-white font-GmarketSansMedium'>
-            <thead>
-                <tr>
-                <th className='bg-tankblue'>좋아요</th>
-                <th className='bg-tankblue'>제목</th>
-                <th className='bg-tankblue'>글쓴이</th>
-                <th className='bg-tankblue'>날짜</th>
-                </tr>
-                {/* <th>좋아요(heart)</th> */}
-                {/* <th>제목(title)</th> */}
-                {/* <th>글쓴이(author)</th> */}
-                {/* <th>날짜(date)</th> */}
-                {/* 카테고리(category) */}
-                {/* 댓글갯수(comment_cnt) */}
-            </thead>
-            <tbody>
-                <tr>
-                <td>💗<text className='text-healgreen'>[0]</text></td>
-                <td className='text-left'><text className='text-deeppink'>거래</text> 거래를 요청합니다!!!!!!!!&nbsp;&nbsp;<text className='text-violet'>[0]</text></td>
-                <td><text className='text-bermuda'>jellycodes</text></td>
-                <td>2022-11-23</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                <td>💗<text className='text-healgreen'>[0]</text></td>
-                <td className='text-left'><text className='text-deeppink'>거래</text> 거래를 요청합니다!!!!!!!!&nbsp;&nbsp;<text className='text-violet'>[0]</text></td>
-                <td><text className='text-bermuda'>jellycodes</text></td>
-                <td>2022-11-23</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                <td>💗<text className='text-healgreen'>[0]</text></td>
-                <td className='text-left'><text className='text-deeppink'>거래</text> 거래를 요청합니다!!!!!!!!&nbsp;&nbsp;<text className='text-violet'>[0]</text></td>
-                <td><text className='text-bermuda'>jellycodes</text></td>
-                <td>2022-11-23</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <BoardList />
     </>
   )
 }

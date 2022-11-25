@@ -20,7 +20,7 @@ import dev.info.Entity.Board;
 import dev.info.board.repository.BoardRepository;
 import dev.info.board.service.BoardService;
 
-@RequestMapping("board")
+@RequestMapping("/board")
 @RestController
 @CrossOrigin("*")
 public class BoardController {
@@ -39,7 +39,7 @@ public class BoardController {
 	}
 	
 	@PostMapping
-	public Board.Response wirteBoard(@RequestBody @Valid Board.Request request) {
+	public Board.Response writeBoard(@RequestBody @Valid Board.Request request) {
 		Board board = Board.Request.toEntity(request);
 		Board savedBoard = boardService.saveBoard(board);
 		return Board.Response.toResponse(savedBoard);

@@ -80,11 +80,13 @@ export default function Healer() {
                 {/* Image gallery */}
                 <div className="mx-auto mt-6 max-w-2xl sm:px-6  lg:max-w-4xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
                     <div className=" overflow-hidden rounded-lg lg:block">
-                        <img
-                            src={product.images[0].src}
-                            alt={product.images[0].alt}
-                            className=""
-                        />
+                        <a>
+                            <img
+                                src={product.images[0].src}
+                                alt={product.images[0].alt}
+                                className=""
+                            />
+                        </a>
                     </div>
                 </div>
 

@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-import { Link } from 'react-router-dom';
+import axios from 'axios';
+import Link from 'next/link';
 import List from './List';
 
 
 const BoardList = () => {
+
   const [boards, setBoards] = useState([]);
+
   useEffect(() => {
-    fetch('http://localhost:8090/board')
+    axios
+      .get('http://localhost:8090/board')
       .then((response) => {
         setBoards(response.data)
       }).catch(error => {
@@ -18,17 +21,31 @@ const BoardList = () => {
   }, []);
 
   return (
-    <table className='mx-auto my-20 border-2 border-separate rounded-lg shadow-2xl border-spacing-6 border-neutral-300'>
-      <List boards = {boards}/>
-      <thead>
-        <div className='flex space-x-32'>
-          <div className='p-3 text-2xl font-bold border-2 text-neutral-800 rounded-xl'>번호</div>
-          <div className='p-3 text-2xl font-bold border-2 text-neutral-800 rounded-xl'>제목</div>
-          <div className='p-3 text-2xl font-bold border-2 text-neutral-800 rounded-xl'>내용</div>
-        </div>
-      </thead>
-      <Link to="/WriteBoard" className="float-right px-5 py-2 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200">글쓰기</Link>
-    </table>
+    <>
+      <div className='grid place-items-center text-xl text-white font-GmarketSansMedium'>
+        <table class="table-auto" className='m-5 text-white font-GmarketSansMedium'>
+          <List boards = {boards}/>
+            <thead>
+                <tr className='bg-tankblue'>
+                {/* <th>좋아요</th>
+                <th>제목</th>
+                <th>글쓴이</th>
+                <th>날짜</th> */}
+                <th>번호</th>
+                <th>제목</th>
+                <th>내용</th>
+                </tr>
+                {/* <th>좋아요(heart)</th> */}
+                {/* <th>제목(title)</th> */}
+                {/* <th>글쓴이(author)</th> */}
+                {/* <th>날짜(date)</th> */}
+                {/* 카테고리(category) */}
+                {/* 댓글갯수(comment_cnt) */}
+            </thead>
+        </table>
+      </div>
+      <Link href="./WriteBoard" className="float-right px-5 py-2 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200">글쓰기</Link>
+      </>
   )
 }
 export default BoardList

@@ -31,7 +31,9 @@ export default function Job18() {
     <div className="mt-32 ">
       <div className="mb-32 hero container max-w-screen-lg  mx-auto flex justify-center">
         <span className='mt-2.5 mr-6'>
-          <Image src={tanks} width={65} height={65} />
+          <a>
+            <Image src={tanks} width={65} height={65} />
+          </a>
         </span>
         <div className='text-white text-7xl font-bold text-shadow-neonblue  '>TANK</div>
       </div>

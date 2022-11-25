@@ -1,7 +1,7 @@
 import { useAtom } from 'jotai';
+import Link from 'next/link';
 import React from 'react'
-import { Link } from 'react-router-dom';
-import curBoardAtom from '../../../atoms/curBoardAtom';
+import curBoardAtom from '../../atoms/curBoardAtom';
 
 const List = (props) => {
     const boards = props.boards;
@@ -10,9 +10,9 @@ const List = (props) => {
 
     return (
         <>
-            {boards.map(board => (
+            {boards && boards.map(board => (
 
-                <Link to="/ModifyBoard" >
+                <Link href="/ModifyBoard" >
                     <button onClick={() => {
                         SetCurBoard(board.id);
                     }} >
@@ -29,6 +29,13 @@ const List = (props) => {
                                                         <td className="px-40 text-xl text-gray-500 py-30">{board.title}</td>
                                                         <td className="px-6 py-2 text-xl text-gray-500">{board.content}</td>
                                                     </tr>
+                                                    {/* <tr key={board.id + board.title} className="hover:bg-neutral-200">
+                                                    <th className="px-6 py-3 text-xl text-gray-500">{board.id}</th>
+                                                    <td>💗<text className='text-healgreen'>[0]</text></td>
+                                                    <td className='text-left'><text className='text-deeppink'>거래</text>{board.title}<text className='text-violet'>[0]</text></td>
+                                                    <td><text className='text-bermuda'>jellycodes</text></td>
+                                                    <td>2022-11-23</td>
+                                                    </tr> */}
                                                 </thead>
                                             </table>
                                         </div>
@@ -37,7 +44,7 @@ const List = (props) => {
                             </div>
                         </div>
                     </button>
-                    <br />
+                    <br/>
                 </Link>
 
             ))}

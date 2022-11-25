@@ -138,17 +138,25 @@ export default function Header() {
       <div className='flex flex-col fixed  inset-y-0 right-0 m-10 mt-36'>
         <div className=' cursor-pointer -mt-1  mr-2 mb-1'>
           <Link href="https://www.ff14.co.kr/main">
-            <Image src={ff14} width={60} height={60} />
+            <a>
+              <Image src={ff14} width={60} height={60} />
+            </a>
           </Link>
         </div>
         <div className='-mt-1  mr-2 mb-1'>
-          <Image src={twitter} width={50} height={50} />
+          <a>
+            <Image src={twitter} width={50} height={50} />
+          </a>
         </div>
         <div className='-mt-1  mr-2 mb-1'>
-          <Image src={insta} width={50} height={50} />
+          <a>
+            <Image src={insta} width={50} height={50} />
+          </a>
         </div>
         <div className='-mt-1  mr-2 mb-1'>
-          <Image src={kakao} width={50} height={50} />
+          <a>
+            <Image src={kakao} width={50} height={50} />
+          </a>
         </div>
       </div>
 
