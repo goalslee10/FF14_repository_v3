@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import dev.info.Entity.Board;
+import dev.info.board.Entity.Board;
 import dev.info.board.repository.BoardRepository;
 import dev.info.board.service.BoardService;
 
@@ -39,7 +39,7 @@ public class BoardController {
 	}
 	
 	@PostMapping
-	public Board.Response wirteBoard(@RequestBody @Valid Board.Request request) {
+	public Board.Response writeBoard(@RequestBody @Valid Board.Request request) {
 		Board board = Board.Request.toEntity(request);
 		Board savedBoard = boardService.saveBoard(board);
 		return Board.Response.toResponse(savedBoard);

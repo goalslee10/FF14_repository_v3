@@ -1,7 +1,7 @@
 import { useAtom } from 'jotai'
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-import curBoardAtom from '../../../atoms/curBoardAtom'
+import curBoardAtom from '../../atoms/curBoardAtom'
 
 const ModifyBoard = () => {
 
@@ -26,7 +26,7 @@ const ModifyBoard = () => {
             body: JSON.stringify(data),
         };
 
-        fetch('http://localhost:8090/boards', options)
+        fetch('http://localhost:8090/board', options)
             .then(response => response.json())
             // .then(data => console.log(data))
             .catch(error => console.error('실패', error));
@@ -48,7 +48,7 @@ const ModifyBoard = () => {
             },
         };
 
-        fetch(`http://localhost:8090/boards?id=${curBoard}`, options)
+        fetch(`http://localhost:8090/board?id=${curBoard}`, options)
             .then(response => {
                 if (response.ok) { console.log("성공") } else { console.log("실패") }
             })
@@ -58,7 +58,7 @@ const ModifyBoard = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:8090/boards/${curBoard}`)
+        fetch(`http://localhost:8090/board/${curBoard}`)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
@@ -84,18 +84,26 @@ const ModifyBoard = () => {
 
                                         <tr className="px-40 text-xs text-gray-900"><th className='p-3 text-lg text-center text-neutral-800'>제목</th>
                                             <input type="text" value={title} placeholder="제목을 입력하세요" onChange={(event) => setTitle(event.target.value)} className="px-6 py-4 text-sm font-medium text-left text-gray-900 border-2" /></tr>
-                                        
+
                                         <tr className="px-6 py-4 text-sm font-medium text-left text-gray-900 border-2"><th className='p-3 text-lg text-center text-neutral-800'>내용</th>
-                                            <textarea type="text" value={content} placeholder="내용을 입력하세요" onChange={event => setContent(event.target.value)} className="px-6 py-4 text-sm font-medium text-left text-gray-900 border-2"/></tr>
+                                            <textarea type="text" value={content} placeholder="내용을 입력하세요" onChange={event => setContent(event.target.value)} className="px-6 py-4 text-sm font-medium text-left text-gray-900 border-2" /></tr>
                                     </thead>
-            <Link to='/BoardList'>
-                <button type='modify' onClick={handleModify} className='px-5 py-2 mx-3 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200 '>수정</button>
-            </Link>
-            <Link to='/BoardList'>
-                <button type='delete' onClick={handleDelete} className='px-5 py-2 m-3 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200'>삭제</button>
-            </Link>
                                 </table>
-                            </div></div></div></div></div>
+                                <Link href='/BoardList'>
+                                    <a>
+                                        <button type='modify' onClick={handleModify} className='px-5 py-2 mx-3 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200 '>수정</button>
+                                    </a>
+                                </Link>
+                                <Link href='/BoardList'>
+                                    <a>
+                                        <button type='delete' onClick={handleDelete} className='px-5 py-2 m-3 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200'>삭제</button>
+                                    </a>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

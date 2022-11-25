@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import dev.info.Entity.Board;
+import dev.info.board.Entity.Board;
 
 public interface BoardService {
 

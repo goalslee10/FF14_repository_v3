@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import dev.info.Entity.Board;
-import dev.info.Entity.Board.Request;
+import dev.info.board.Entity.Board;
+import dev.info.board.Entity.Board.Request;
 import dev.info.board.repository.BoardRepository;
 
 @Service

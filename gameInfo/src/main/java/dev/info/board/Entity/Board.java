@@ -1,4 +1,4 @@
-package dev.info.Entity;
+package dev.info.board.Entity;
 
 import java.util.ArrayList;
 import java.util.List;

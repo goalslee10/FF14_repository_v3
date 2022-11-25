@@ -1,7 +1,7 @@
 import { useAtom } from 'jotai';
 import React from 'react'
-import { Link } from 'react-router-dom';
-import curBoardAtom from '../../../atoms/curBoardAtom';
+import Link from 'next/link';
+import curBoardAtom from '../../atoms/curBoardAtom';
 
 const List = (props) => {
     const boards = props.boards;
@@ -10,9 +10,9 @@ const List = (props) => {
 
     return (
         <>
-            {boards.map(board => (
+            {boards && boards.map(board => (
 
-                <Link to="/ModifyBoard" >
+                <Link href="/ModifyBoard" >
                     <button onClick={() => {
                         SetCurBoard(board.id);
                     }} >

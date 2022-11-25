@@ -37,7 +37,9 @@ export default function Healer() {
         <div className="mt-32 ">
             <div className="mb-32 hero container max-w-screen-lg  mx-auto flex justify-center">
                 <span className='mt-2.5 mr-6'>
-                    <Image src={role_healers} width={65} height={65} />
+                    <a>
+                        <Image src={role_healers} width={65} height={65} />
+                    </a>
                 </span>
                 <div className='text-white text-7xl font-bold text-shadow-neonHeal  '>HEAL</div>
             </div>
@@ -47,28 +49,36 @@ export default function Healer() {
                     type="button"
                     className="inline-flex items-center  bg-darkblue px-8 py-4 font-GmarketSansMedium text-lg text-white focus:outline-none focus:ring-2 focus:ring-healgreen">
                     <span className='-mt-1  mr-2'>
-                        <Image src={white_mage} width={30} height={30} />
+                        <a>
+                            <Image src={white_mage} width={30} height={30} />
+                        </a>
                     </span> 백마도사
                 </button>
                 <button
                     type="button"
                     className="inline-flex items-center  bg-darkblue px-8 py-4 font-GmarketSansMedium text-lg text-white focus:outline-none focus:ring-2 focus:ring-healgreen">
                     <span className='-mt-1  mr-2'>
-                        <Image src={scholar} width={30} height={30} />
+                        <a>
+                            <Image src={scholar} width={30} height={30} />
+                        </a>
                     </span> 학자
                 </button>
                 <button
                     type="button"
                     className="inline-flex items-center  bg-darkblue px-8 py-4 font-GmarketSansMedium text-lg text-white focus:outline-none focus:ring-2 focus:ring-healgreen">
                      <span className='-mt-1  mr-2'>
+                        <a>
                         <Image src={astrologian} width={30} height={30} />
+                        </a>
                     </span> 점성술사
                 </button>
                 <button
                     type="button"
                     className="inline-flex items-center  bg-darkblue px-12 py-4 font-GmarketSansMedium text-lg text-white focus:outline-none focus:ring-2 focus:ring-healgreen">
                     <span className='-mt-1  mr-2'>
-                        <Image src={sage} width={30} height={30} />
+                        <a>
+                            <Image src={sage} width={30} height={30} />
+                        </a>
                     </span>현자
                 </button>
 
@@ -80,11 +90,13 @@ export default function Healer() {
                 {/* Image gallery */}
                 <div className="mx-auto mt-6 max-w-2xl sm:px-6  lg:max-w-4xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
                     <div className=" overflow-hidden rounded-lg lg:block">
-                        <img
+                        <a>
+                            <img
                             src={product.images[0].src}
                             alt={product.images[0].alt}
                             className=""
-                        />
+                            />
+                        </a>
                     </div>
                 </div>
 
