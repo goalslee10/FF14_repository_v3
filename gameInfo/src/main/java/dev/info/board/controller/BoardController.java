@@ -20,7 +20,7 @@ import dev.info.board.Entity.Board;
 import dev.info.board.repository.BoardRepository;
 import dev.info.board.service.BoardService;
 
-@RequestMapping("board")
+@RequestMapping("/board")
 @RestController
 @CrossOrigin("*")
 public class BoardController {

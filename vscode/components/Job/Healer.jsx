@@ -92,9 +92,15 @@ export default function Healer() {
                     <div className=" overflow-hidden rounded-lg lg:block">
                         <a>
                             <img
+<<<<<<< HEAD
                             src={product.images[0].src}
                             alt={product.images[0].alt}
                             className=""
+=======
+                                src={product.images[0].src}
+                                alt={product.images[0].alt}
+                                className=""
+>>>>>>> d9c94c60f8ec1fa9edfa98ad605f79de7b26762c
                             />
                         </a>
                     </div>

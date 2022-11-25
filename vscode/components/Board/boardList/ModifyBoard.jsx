@@ -88,6 +88,7 @@ const ModifyBoard = () => {
                                         <tr className="px-6 py-4 text-sm font-medium text-left text-gray-900 border-2"><th className='p-3 text-lg text-center text-neutral-800'>내용</th>
                                             <textarea type="text" value={content} placeholder="내용을 입력하세요" onChange={event => setContent(event.target.value)} className="px-6 py-4 text-sm font-medium text-left text-gray-900 border-2" /></tr>
                                     </thead>
+<<<<<<< HEAD
                                 </table>
                                 <Link href='/BoardList'>
                                     <a>
@@ -99,6 +100,15 @@ const ModifyBoard = () => {
                                         <button type='delete' onClick={handleDelete} className='px-5 py-2 m-3 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200'>삭제</button>
                                     </a>
                                 </Link>
+=======
+                                    <Link href='/BoardList'>
+                                        <button type='modify' onClick={handleModify} className='px-5 py-2 mx-3 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200 '>수정</button>
+                                    </Link>
+                                    <Link href='/BoardList'>
+                                        <button type='delete' onClick={handleDelete} className='px-5 py-2 m-3 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200'>삭제</button>
+                                    </Link>
+                                </table>
+>>>>>>> d9c94c60f8ec1fa9edfa98ad605f79de7b26762c
                             </div>
                         </div>
                     </div>

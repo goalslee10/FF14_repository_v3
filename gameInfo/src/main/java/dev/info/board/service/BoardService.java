@@ -14,7 +14,7 @@ public interface BoardService {
 	
 	Board saveBoard(Board newBoard); // 게시판 글 쓰기
 	
-	List<Board> modifyBoard(Board.Request request);
+	List<Board> modifyBoard(Board.Request request); // 게시판 글 수정
 	
 	List<Board> deleteBoard(Integer id); // 게시판 글 지우기
 }

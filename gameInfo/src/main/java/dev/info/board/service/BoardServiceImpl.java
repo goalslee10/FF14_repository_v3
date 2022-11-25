@@ -21,24 +21,24 @@ public class BoardServiceImpl implements BoardService {
 	//findBoardByTitle
 	
 	@Override
-	public List<Board> findallBoards() {
+	public List<Board> findallBoards() { // 게시판 글 조회
 		return boardRepository.findAll();
 	}
 
 	@Override
-	public Board findBoardById(Integer id) {
+	public Board findBoardById(Integer id) { // id를 통한 검색
 		Board searchedBoard = boardRepository.findById(id)
 				.orElseThrow(() -> new RuntimeException(String.format("%s에 해당하는 Id가 존재하지 않습니다.", id)));
 		return searchedBoard;
 	}
 
 	@Override
-	public Board saveBoard(Board newBoard) {
+	public Board saveBoard(Board newBoard) { // 게시판 내용 저장
 		return boardRepository.save(newBoard);
 	}
 
 	@Override
-	public List<Board> modifyBoard(Request request) {
+	public List<Board> modifyBoard(Request request) { // 게시판 수정
 		final Optional<Board> board = boardRepository.findById(request.getId());
 
 		if (board.isPresent()) {
@@ -55,7 +55,7 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	public List<Board> deleteBoard(Integer id) {
+	public List<Board> deleteBoard(Integer id) { // 게시판 삭제
 		boardRepository.deleteById(id);
 
 		List<Board> boards =  boardRepository.findAll();
