@@ -126,7 +126,7 @@ Library : modal, tailwindcss, next.js(framework),  yup, leaflet
 <br></br>
 DB : MySQL, H2
 <br></br>
-Dependencies: Spring Data JPA, Spring Web, H2, MySQL Driver, Lombok, JswWebToken
+Dependencies: Spring Data JPA, Spring Web, H2, MySQL Driver, Lombok, JwtToken
 <br></br>
 REST API(Tool): Postman
 <br></br>
