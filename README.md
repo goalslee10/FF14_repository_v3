@@ -118,17 +118,21 @@
  
  
 ## 📚 STACK
-Skill : JAVA
+Language : JAVA, Javascript
 <br></br>
-IDE : Eclipse, Vscode
+Framework : Spring boot, Next.js
 <br></br>
-Library : modal, tailwindcss, next.js(framework),  yup, leaflet
+IDE : eclipse, vscode
+<br></br>
+Library : modal, tailwindCSS, yup, leaflet
 <br></br>
 DB : MySQL, H2
 <br></br>
 Dependencies: Spring Data JPA, Spring Web, H2, MySQL Driver, Lombok, JwtToken
 <br></br>
 REST API(Tool): Postman
+<br></br>
+Slack, Discord
 <br></br>
 <div> 
 
