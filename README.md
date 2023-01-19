@@ -148,7 +148,6 @@ Slack, Discord
   <img src="https://img.shields.io/badge/nextjs-000000?style=for-the-badge&logo=Next.js&logoColor=white">
   <img src="https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=Leaflet&logoColor=white">
   <img src="https://img.shields.io/badge/tailwindcss-000000?style=for-the-badge&logo=TailWindCss&logoColor=white">
-  <img src="https://img.shields.io/badge/jswtoken-000000?style=for-the-badge&logo=JSONWebTokens&logoColor=white">
   
 <br>
 
