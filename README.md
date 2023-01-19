@@ -122,11 +122,13 @@ Language : JAVA, Javascript
 <br></br>
 Framework : Spring boot, Next.js
 <br></br>
-IDE : eclipse, vscode
-<br></br>
 Library : modal, tailwindCSS, yup, leaflet
 <br></br>
-DB : MySQL, H2
+DB : MySQL, H2 Database
+<br></br>
+Build Tool : maven
+<br></br>
+IDE : eclipse, vscode
 <br></br>
 Dependencies: Spring Data JPA, Spring Web, H2, MySQL Driver, Lombok, JwtToken
 <br></br>
