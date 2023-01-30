@@ -110,6 +110,8 @@
 | 이미지를 넣어서 지도로 만드는 방법에 대한 글들이 다양하지 않아 지도를 만드는데 시행착오가 많이 들었음
 | Leaflet는 자바스크립트를 위해 만들어진 것으로 react환경에서 사용하기 어려움이 다소 있었음<br>
 
+Troble 5. : Modal to Modal
+
 ✔️Solution : react-Leaflet ver.를 찾아 인스톨 후 자바 Leaflet의 Docs를 참고해 react ver.에 적용함. react ver.의 문서만 참고하여 라이브러리를 사용하는데는 어려움이 있음
   
 
